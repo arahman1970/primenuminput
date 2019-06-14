@@ -7,18 +7,19 @@ public class Main {
         int temp;
         int num;
         String prompt;
-        boolean isPrime = true;
+
         Scanner scan = new Scanner(System.in);
         do {
+            boolean isPrime = true;
         System.out.println("Enter any whole positive number:");
         // input
         num = scan.nextInt();
 
 
-            if (num == 1) {
+         if (num == 1) {
                 System.out.println(num + " is not a Prime Number");
                 System.exit(1);
-            }
+          }
 
             for (int i = 2; i <= num / 2; i++) {
                 temp = num % i;
